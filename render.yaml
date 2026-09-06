@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: chatwave-frontend
+    env: node
+    plan: free
+    rootDir: .
+    healthCheckPath: /api/health
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_SOCKET_SERVER_URL
+        value: https://chatwave-signaling.onrender.com
+  - type: web
+    name: chatwave-signaling
+    env: node
+    plan: free
+    rootDir: server
+    healthCheckPath: /health
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
