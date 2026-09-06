@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "ignoreDeprecations": "6.0",
-    "moduleResolution": "node10",
+     "ignoreDeprecations": "6.0",
+    "moduleResolution": "node",
     "rootDir": ".",
     "outDir": "dist",
     "strict": true,
@@ -16,3 +16,4 @@
   "include": ["server.ts"],
   "exclude": ["dist", "node_modules"]
 }
+ 

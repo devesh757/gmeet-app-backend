@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "tsx watch server.ts",
-    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && npm run start",
+    "build": "npx tsc -b",
     "start": "node dist/server.js"
   },
   "dependencies": {
