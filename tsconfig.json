@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "types": ["node"]
   },
-  "include": ["server.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["dist", "node_modules"]
 }
  
