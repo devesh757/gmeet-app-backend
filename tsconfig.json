@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "moduleResolution": "node10",
     "rootDir": ".",
     "outDir": "dist",
     "strict": true,
